@@ -2,8 +2,9 @@
 
 ## Team
 
-Zakharov Denis 2R2
-Pasha Timoshenko 2R2
+Zakharov Denis
+
+Pasha Timoshenko
 
 ## Use
 
