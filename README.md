@@ -2,11 +2,12 @@
 
 ## Team
 
-With Pasha Timoshenko 2R2
+Zakharov Denis 2R2
+Pasha Timoshenko 2R2
 
 ## Use
 
-React, Redux
+HTML/CSS + JavaScript, React, Redux
 
 ## Commands
 ### `npm start`
