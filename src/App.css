@@ -13,6 +13,9 @@ body {
     padding: 0;
     overflow:hidden;
     font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -57,15 +60,75 @@ body {
     color: ghostwhite;
     text-align: center;
     position: relative;
-    
 }
 
 .count {
     top: 7%;
-    right: 25%;
+    right: 39%;
 }
 
 .visible {
     top: 7%;
-    right: 20%;
+    right: 30%;
+}
+
+.cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-30deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    position: abolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.cube div span {
+    position: abolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#151515, gold);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+.top {
+    background: #222;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    transform: rotateX(90deg) rotateZ(150px);
+}
+
+.top::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: gold;
+    transform: translateZ(-380px);
+    filter: blur(20px);
+    box-shadow: 0 0 120px rgba(218, 165, 32, 0.2),
+    0 0 200px rgba(222, 175, 57, 0.4),
+    0 0 300px rgba(222, 175, 57, 0.6),
+    0 0 400px rgba(222, 175, 57, 0.8),
+    0 0 500px rgba(222, 175, 57);
+
 }

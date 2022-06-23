@@ -16,9 +16,12 @@ function App() {
 	return (
 		<div className="box">
 			<div className="store">
-				<div className="add-cat">
+				{/* СТИЛИЗАЦИЯ КНОПКИ */}
+				<div className="add-cat"> 
+					<button className="btn" onClick={() => addCustomer(prompt())}> Добавить кота</button>
 					<button className="btn" onClick={() => addCustomer(prompt())}> Добавить кота</button>
 				</div>
+				
 				{customers.length > 0 ?
 				<div className="visible">
 					{customers.map(customer =>
@@ -30,7 +33,15 @@ function App() {
 					клиенты нет
 				</div>
 				}
-				
+				{/* <div className="cube">
+					<div className="top"></div>
+					<div>
+						<span style="--i:0;"></span>
+						<span style="--i:1;"></span>
+						<span style="--i:2;"></span>
+						<span style="--i:3;"></span>
+					</div>
+				</div> */}
 			</div>
 		</div>
 	);
