@@ -1,8 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-<<<<<<< Updated upstream
-=======
-import React from "react";
->>>>>>> Stashed changes
+import './App.css';
 
 function App() {
 	const dispatch = useDispatch()
@@ -17,26 +14,24 @@ function App() {
 	}
 
 	return (
-		<div className="App">
-<<<<<<< Updated upstream
-			<div>{cash}</div>
-=======
->>>>>>> Stashed changes
-			<div>
-				<button onClick={() => addCustomer(prompt())}> Добавить клиента</button>
-			</div>
-
-			{customers.length > 0 ?
-				<div>
+		<div className="box">
+			<div className="store">
+				<div className="add-cat">
+					<button className="btn" onClick={() => addCustomer(prompt())}> Добавить кота</button>
+				</div>
+				{customers.length > 0 ?
+				<div className="visible">
 					{customers.map(customer =>
-						<div> {customer.name} </div>
+						<div className="visible"> {customer.name}</div>
 					)}
 				</div>
 				:
-				<div>
+				<div className="count">
 					клиенты нет
 				</div>
-			}
+				}
+				
+			</div>
 		</div>
 	);
 }

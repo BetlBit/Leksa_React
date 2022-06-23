@@ -8,7 +8,7 @@ export const customerReducer = (state = defaultState, action) => {
 			return { ...state, customers: [...state.customers, action.payload] }
 
 		case "REMOVE_CUSTOMERS":
-			return { ...state, cash: state.cash - action.payload }
+			return { ...state, customers: [...state.customers, action.payload] }
 
 		default:
 			return state
