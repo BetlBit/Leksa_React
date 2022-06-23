@@ -1,18 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
+<<<<<<< Updated upstream
+=======
+import React from "react";
+>>>>>>> Stashed changes
 
 function App() {
 	const dispatch = useDispatch()
-	const cash = useSelector(state => state.cash.cash)
 	const customers = useSelector(state => state.customers.customers)
-	console.log(cash)
-
-	const addCash = (cash) => {
-		dispatch({ type: "ADD_CASH", payload: 5 })
-	}
-
-	const getCash = (cash) => {
-		dispatch({ type: "GET_CASH", payload: 5 })
-	}
 
 	const addCustomer = (name) => {
 		const customer = {
@@ -24,10 +18,11 @@ function App() {
 
 	return (
 		<div className="App">
+<<<<<<< Updated upstream
 			<div>{cash}</div>
+=======
+>>>>>>> Stashed changes
 			<div>
-				<button onClick={() => addCash()}>Пополнить</button>
-				<button onClick={() => getCash()}> NO Пополнить</button>
 				<button onClick={() => addCustomer(prompt())}> Добавить клиента</button>
 			</div>
 
