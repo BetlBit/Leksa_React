@@ -7,7 +7,4 @@ Pasha Timoshenko 2R2
 
 ## Use
 
-HTML/CSS + JavaScript, React, Redux
-
-## Commands
-### `npm start`
+HTML/CSS + JavaScript, React, Redux, Redux toolkit
