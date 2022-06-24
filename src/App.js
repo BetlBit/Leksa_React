@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import './App.css';
+import Cats from 
 
 function App() {
 	const dispatch = useDispatch()
@@ -25,7 +26,7 @@ function App() {
 				{customers.length > 0 ?
 				<div className="visible">
 					{customers.map(customer =>
-						<div className="visible"> {customer.name}</div>
+						<div> {customer.name} <img src={Cats}/> </div>
 					)}
 				</div>
 				:
