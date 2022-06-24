@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import './App.css';
-import Cats from 
+import Cats from './images/cat.png'
 
 function App() {
 	const dispatch = useDispatch()
